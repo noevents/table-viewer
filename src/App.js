@@ -76,7 +76,7 @@ class App extends Component {
 
   componentDidMount = () => {
 
-    papa.parse('https://file.quad.moe/titanic.csv', {
+    papa.parse('https://simplestatic.herokuapp.com/titanic.csv', {
       download: true,
       complete: (results) => {
         let sortedTable = results.data.slice(1, results.data.length-1)
