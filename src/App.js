@@ -76,7 +76,7 @@ class App extends Component {
 
   componentDidMount = () => {
 
-    papa.parse('http://127.0.0.1:8080/titanic.csv', {
+    papa.parse('https://file.quad.moe/titanic.csv', {
       download: true,
       complete: (results) => {
         let sortedTable = results.data.slice(1, results.data.length-1)
